@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Сущности",
+        "measurementParameter": "Measurement Parameter",
+        "unitKiPiA": "Unit KI Pi A",
+        "installationKiPiA": "Installation KI Pi A",
+        "tender": "Tender",
+        "projectMark": "Project Mark",
+        "unitKiPiAGroup": "Unit KI Pi A Group",
+        "installationKiPiAGroup": "Installation KI Pi A Group",
+        "kipWiringDiagramType": "KIP Wiring Diagram Type",
+        "client": "Client",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

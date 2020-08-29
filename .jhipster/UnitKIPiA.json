@@ -1,0 +1,97 @@
+{
+  "name": "UnitKIPiA",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "systemRSUPAZ",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "rootPlanPresence",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "needProjectOrder",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "needProjectCalculation",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "needElectricalHeating",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "numberAI",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberAO",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberDI",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "numberDO",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "basicLaborInput",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "kIPWiringDiagramType",
+      "otherEntityRelationshipName": "unitKIPiA",
+      "relationshipName": "kipWiringDiagramType",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "measurementParameter",
+      "otherEntityRelationshipName": "unitKIPiA",
+      "relationshipName": "meashurmentParameter",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "unitKIPiAGroup",
+      "otherEntityRelationshipName": "unitKIPiA",
+      "relationshipName": "unitKIPiAGroup",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200829125912",
+  "entityTableName": "unit_ki_pi_a",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

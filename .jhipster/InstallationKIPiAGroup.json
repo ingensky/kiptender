@@ -1,0 +1,38 @@
+{
+  "name": "InstallationKIPiAGroup",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "installationKIPiA",
+      "otherEntityRelationshipName": "installationKIPiAGroup",
+      "relationshipName": "installationKIPiA",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "tender",
+      "otherEntityRelationshipName": "installationKIPiAGroup",
+      "relationshipName": "tender",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200829130412",
+  "entityTableName": "installation_ki_pi_a_group",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

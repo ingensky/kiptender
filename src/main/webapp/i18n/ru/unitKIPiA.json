@@ -1,0 +1,36 @@
+{
+  "kiptenderApp": {
+    "unitKIPiA": {
+      "home": {
+        "title": "Unit KI Pi AS",
+        "createLabel": "Создать новый Unit KI Pi A",
+        "createOrEditLabel": "Создать или отредактировать Unit KI Pi A",
+        "notFound": "No Unit KI Pi AS found"
+      },
+      "created": "Новый Unit KI Pi A создан с идентификатором {{ param }}",
+      "updated": "Unit KI Pi A обновлен с идентификатором {{ param }}",
+      "deleted": "Unit KI Pi A удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Unit KI Pi A {{ id }}?"
+      },
+      "detail": {
+        "title": "Unit KI Pi A"
+      },
+      "title": "Title",
+      "description": "Description",
+      "systemRSUPAZ": "System RSUPAZ",
+      "rootPlanPresence": "Root Plan Presence",
+      "needProjectOrder": "Need Project Order",
+      "needProjectCalculation": "Need Project Calculation",
+      "needElectricalHeating": "Need Electrical Heating",
+      "numberAI": "Number AI",
+      "numberAO": "Number AO",
+      "numberDI": "Number DI",
+      "numberDO": "Number DO",
+      "basicLaborInput": "Basic Labor Input",
+      "kipWiringDiagramType": "Kip Wiring Diagram Type",
+      "meashurmentParameter": "Meashurment Parameter",
+      "unitKIPiAGroup": "Unit KI Pi A Group"
+    }
+  }
+}

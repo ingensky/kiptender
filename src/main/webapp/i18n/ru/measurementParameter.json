@@ -1,0 +1,22 @@
+{
+  "kiptenderApp": {
+    "measurementParameter": {
+      "home": {
+        "title": "Measurement Parameters",
+        "createLabel": "Создать новый Measurement Parameter",
+        "createOrEditLabel": "Создать или отредактировать Measurement Parameter",
+        "notFound": "No Measurement Parameters found"
+      },
+      "created": "Новый Measurement Parameter создан с идентификатором {{ param }}",
+      "updated": "Measurement Parameter обновлен с идентификатором {{ param }}",
+      "deleted": "Measurement Parameter удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Measurement Parameter {{ id }}?"
+      },
+      "detail": {
+        "title": "Measurement Parameter"
+      },
+      "title": "Title"
+    }
+  }
+}

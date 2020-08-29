@@ -1,0 +1,24 @@
+{
+  "kiptenderApp": {
+    "installationKIPiAGroup": {
+      "home": {
+        "title": "Installation KI Pi A Groups",
+        "createLabel": "Create a new Installation KI Pi A Group",
+        "createOrEditLabel": "Create or edit a Installation KI Pi A Group",
+        "notFound": "No Installation KI Pi A Groups found"
+      },
+      "created": "A new Installation KI Pi A Group is created with identifier {{ param }}",
+      "updated": "A Installation KI Pi A Group is updated with identifier {{ param }}",
+      "deleted": "A Installation KI Pi A Group is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Installation KI Pi A Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Installation KI Pi A Group"
+      },
+      "quantity": "Quantity",
+      "installationKIPiA": "Installation KI Pi A",
+      "tender": "Tender"
+    }
+  }
+}

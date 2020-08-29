@@ -1,0 +1,38 @@
+{
+  "name": "UnitKIPiAGroup",
+  "fields": [
+    {
+      "fieldName": "quantity",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "unitKIPiA",
+      "otherEntityRelationshipName": "unitKIPiAGroup",
+      "relationshipName": "unitKIPiA",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "tender",
+      "otherEntityRelationshipName": "unitKIPiAGroup",
+      "relationshipName": "tender",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200829130312",
+  "entityTableName": "unit_ki_pi_a_group",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

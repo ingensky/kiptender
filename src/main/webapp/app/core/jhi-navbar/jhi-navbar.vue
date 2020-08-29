@@ -32,6 +32,42 @@
                         <font-awesome-icon icon="th-list" />
                         <span v-text="$t('global.menu.entities.main')">Entities</span>
                     </span>
+                    <b-dropdown-item to="/measurement-parameter">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.measurementParameter')">MeasurementParameter</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/unit-ki-pi-a">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.unitKiPiA')">UnitKIPiA</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/installation-ki-pi-a">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.installationKiPiA')">InstallationKIPiA</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/tender">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.tender')">Tender</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/project-mark">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.projectMark')">ProjectMark</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/unit-ki-pi-a-group">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.unitKiPiAGroup')">UnitKIPiAGroup</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/installation-ki-pi-a-group">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.installationKiPiAGroup')">InstallationKIPiAGroup</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/kip-wiring-diagram-type">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.kipWiringDiagramType')">KIPWiringDiagramType</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/client">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.client')">Client</span>
+                    </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown

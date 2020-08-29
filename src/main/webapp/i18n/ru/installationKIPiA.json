@@ -1,0 +1,23 @@
+{
+  "kiptenderApp": {
+    "installationKIPiA": {
+      "home": {
+        "title": "Installation KI Pi AS",
+        "createLabel": "Создать новый Installation KI Pi A",
+        "createOrEditLabel": "Создать или отредактировать Installation KI Pi A",
+        "notFound": "No Installation KI Pi AS found"
+      },
+      "created": "Новый Installation KI Pi A создан с идентификатором {{ param }}",
+      "updated": "Installation KI Pi A обновлен с идентификатором {{ param }}",
+      "deleted": "Installation KI Pi A удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Installation KI Pi A {{ id }}?"
+      },
+      "detail": {
+        "title": "Installation KI Pi A"
+      },
+      "title": "Title",
+      "installationKIPiAGroup": "Installation KI Pi A Group"
+    }
+  }
+}

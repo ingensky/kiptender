@@ -29,6 +29,15 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 
 /* tslint:disable */
 
+import MeasurementParameterService from '@/entities/measurement-parameter/measurement-parameter.service';
+import UnitKIPiAService from '@/entities/unit-ki-pi-a/unit-ki-pi-a.service';
+import InstallationKIPiAService from '@/entities/installation-ki-pi-a/installation-ki-pi-a.service';
+import TenderService from '@/entities/tender/tender.service';
+import ProjectMarkService from '@/entities/project-mark/project-mark.service';
+import UnitKIPiAGroupService from '@/entities/unit-ki-pi-a-group/unit-ki-pi-a-group.service';
+import InstallationKIPiAGroupService from '@/entities/installation-ki-pi-a-group/installation-ki-pi-a-group.service';
+import KIPWiringDiagramTypeService from '@/entities/kip-wiring-diagram-type/kip-wiring-diagram-type.service';
+import ClientService from '@/entities/client/client.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -91,6 +100,15 @@ new Vue({
     metricsService: () => new MetricsService(),
     alertService: () => alertService,
     translationService: () => translationService,
+    measurementParameterService: () => new MeasurementParameterService(),
+    unitKIPiAService: () => new UnitKIPiAService(),
+    installationKIPiAService: () => new InstallationKIPiAService(),
+    tenderService: () => new TenderService(),
+    projectMarkService: () => new ProjectMarkService(),
+    unitKIPiAGroupService: () => new UnitKIPiAGroupService(),
+    installationKIPiAGroupService: () => new InstallationKIPiAGroupService(),
+    kIPWiringDiagramTypeService: () => new KIPWiringDiagramTypeService(),
+    clientService: () => new ClientService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService,
   },

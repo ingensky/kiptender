@@ -1,0 +1,23 @@
+{
+  "kiptenderApp": {
+    "kIPWiringDiagramType": {
+      "home": {
+        "title": "KIP Wiring Diagram Types",
+        "createLabel": "Create a new KIP Wiring Diagram Type",
+        "createOrEditLabel": "Create or edit a KIP Wiring Diagram Type",
+        "notFound": "No KIP Wiring Diagram Types found"
+      },
+      "created": "A new KIP Wiring Diagram Type is created with identifier {{ param }}",
+      "updated": "A KIP Wiring Diagram Type is updated with identifier {{ param }}",
+      "deleted": "A KIP Wiring Diagram Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete KIP Wiring Diagram Type {{ id }}?"
+      },
+      "detail": {
+        "title": "KIP Wiring Diagram Type"
+      },
+      "title": "Title",
+      "description": "Description"
+    }
+  }
+}

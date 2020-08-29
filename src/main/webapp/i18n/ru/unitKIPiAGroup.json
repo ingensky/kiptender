@@ -1,0 +1,24 @@
+{
+  "kiptenderApp": {
+    "unitKIPiAGroup": {
+      "home": {
+        "title": "Unit KI Pi A Groups",
+        "createLabel": "Создать новый Unit KI Pi A Group",
+        "createOrEditLabel": "Создать или отредактировать Unit KI Pi A Group",
+        "notFound": "No Unit KI Pi A Groups found"
+      },
+      "created": "Новый Unit KI Pi A Group создан с идентификатором {{ param }}",
+      "updated": "Unit KI Pi A Group обновлен с идентификатором {{ param }}",
+      "deleted": "Unit KI Pi A Group удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Unit KI Pi A Group {{ id }}?"
+      },
+      "detail": {
+        "title": "Unit KI Pi A Group"
+      },
+      "quantity": "Quantity",
+      "unitKIPiA": "Unit KI Pi A",
+      "tender": "Tender"
+    }
+  }
+}

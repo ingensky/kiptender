@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <!--
+        Added the constraints for entity Tender.
+    -->
+    <changeSet id="20200829130112-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tender_id"
+                                 baseTableName="tender_project_mark"
+                                 constraintName="fk_tender_project_mark_tender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tender"/>
+
+        <addForeignKeyConstraint baseColumnNames="project_mark_id"
+                                 baseTableName="tender_project_mark"
+                                 constraintName="fk_tender_project_mark_project_mark_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="project_mark"/>
+        
+        <addForeignKeyConstraint baseColumnNames="tender_id"
+                                 baseTableName="tender_unitkipiagroup"
+                                 constraintName="fk_tender_unitkipiagroup_tender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tender"/>
+
+        <addForeignKeyConstraint baseColumnNames="unitkipiagroup_id"
+                                 baseTableName="tender_unitkipiagroup"
+                                 constraintName="fk_tender_unitkipiagroup_unitkipiagroup_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="unit_ki_pi_a_group"/>
+        
+        <addForeignKeyConstraint baseColumnNames="tender_id"
+                                 baseTableName="tender_installationkipiagroup"
+                                 constraintName="fk_tender_installationkipiagroup_tender_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tender"/>
+
+        <addForeignKeyConstraint baseColumnNames="installationkipiagroup_id"
+                                 baseTableName="tender_installationkipiagroup"
+                                 constraintName="fk_tender_installationkipiagroup_installationkipiagroup_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="installation_ki_pi_a_group"/>
+        
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="tender"
+                                 constraintName="fk_tender_client_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="client"/>
+
+    </changeSet>
+</databaseChangeLog>

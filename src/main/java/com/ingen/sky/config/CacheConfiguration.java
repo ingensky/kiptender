@@ -50,6 +50,26 @@ public class CacheConfiguration {
             createCache(cm, com.ingen.sky.domain.User.class.getName() + ".authorities");
             createCache(cm, com.ingen.sky.domain.PersistentToken.class.getName());
             createCache(cm, com.ingen.sky.domain.User.class.getName() + ".persistentTokens");
+            createCache(cm, com.ingen.sky.domain.MeasurementParameter.class.getName());
+            createCache(cm, com.ingen.sky.domain.UnitKIPiA.class.getName());
+            createCache(cm, com.ingen.sky.domain.UnitKIPiA.class.getName() + ".unitKIPiAGroups");
+            createCache(cm, com.ingen.sky.domain.InstallationKIPiA.class.getName());
+            createCache(cm, com.ingen.sky.domain.InstallationKIPiA.class.getName() + ".installationKIPiAGroups");
+            createCache(cm, com.ingen.sky.domain.Tender.class.getName());
+            createCache(cm, com.ingen.sky.domain.Tender.class.getName() + ".projectMarks");
+            createCache(cm, com.ingen.sky.domain.Tender.class.getName() + ".unitKIPiAGroups");
+            createCache(cm, com.ingen.sky.domain.Tender.class.getName() + ".installationKIPiAGroups");
+            createCache(cm, com.ingen.sky.domain.ProjectMark.class.getName());
+            createCache(cm, com.ingen.sky.domain.ProjectMark.class.getName() + ".tenders");
+            createCache(cm, com.ingen.sky.domain.UnitKIPiAGroup.class.getName());
+            createCache(cm, com.ingen.sky.domain.UnitKIPiAGroup.class.getName() + ".unitKIPiAS");
+            createCache(cm, com.ingen.sky.domain.UnitKIPiAGroup.class.getName() + ".tenders");
+            createCache(cm, com.ingen.sky.domain.InstallationKIPiAGroup.class.getName());
+            createCache(cm, com.ingen.sky.domain.InstallationKIPiAGroup.class.getName() + ".installationKIPiAS");
+            createCache(cm, com.ingen.sky.domain.InstallationKIPiAGroup.class.getName() + ".tenders");
+            createCache(cm, com.ingen.sky.domain.KIPWiringDiagramType.class.getName());
+            createCache(cm, com.ingen.sky.domain.Client.class.getName());
+            createCache(cm, com.ingen.sky.domain.Client.class.getName() + ".tenders");
             // jhipster-needle-ehcache-add-entry
         };
     }

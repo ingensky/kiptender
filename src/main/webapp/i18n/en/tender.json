@@ -1,0 +1,32 @@
+{
+  "kiptenderApp": {
+    "tender": {
+      "home": {
+        "title": "Tenders",
+        "createLabel": "Create a new Tender",
+        "createOrEditLabel": "Create or edit a Tender",
+        "notFound": "No Tenders found"
+      },
+      "created": "A new Tender is created with identifier {{ param }}",
+      "updated": "A Tender is updated with identifier {{ param }}",
+      "deleted": "A Tender is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tender {{ id }}?"
+      },
+      "detail": {
+        "title": "Tender"
+      },
+      "number": "Number",
+      "title": "Title",
+      "description": "Description",
+      "location": "Location",
+      "worktrip": "Worktrip",
+      "needSIDStage": "Need SID Stage",
+      "needOTRStage": "Need OTR Stage",
+      "projectMark": "Project Mark",
+      "unitKIPiAGroup": "Unit KI Pi A Group",
+      "installationKIPiAGroup": "Installation KI Pi A Group",
+      "client": "Client"
+    }
+  }
+}

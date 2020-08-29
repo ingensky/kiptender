@@ -1,0 +1,24 @@
+{
+  "kiptenderApp": {
+    "projectMark": {
+      "home": {
+        "title": "Project Marks",
+        "createLabel": "Создать новый Project Mark",
+        "createOrEditLabel": "Создать или отредактировать Project Mark",
+        "notFound": "No Project Marks found"
+      },
+      "created": "Новый Project Mark создан с идентификатором {{ param }}",
+      "updated": "Project Mark обновлен с идентификатором {{ param }}",
+      "deleted": "Project Mark удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Project Mark {{ id }}?"
+      },
+      "detail": {
+        "title": "Project Mark"
+      },
+      "title": "Title",
+      "mark": "Mark",
+      "tender": "Tender"
+    }
+  }
+}

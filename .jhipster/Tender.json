@@ -1,0 +1,86 @@
+{
+  "name": "Tender",
+  "fields": [
+    {
+      "fieldName": "number",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "3"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "worktrip",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "needSIDStage",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "needOTRStage",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "projectMark",
+      "otherEntityRelationshipName": "tender",
+      "relationshipName": "projectMark",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "unitKIPiAGroup",
+      "otherEntityRelationshipName": "tender",
+      "relationshipName": "unitKIPiAGroup",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "installationKIPiAGroup",
+      "otherEntityRelationshipName": "tender",
+      "relationshipName": "installationKIPiAGroup",
+      "otherEntityField": "id",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "tender",
+      "relationshipName": "client",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200829130112",
+  "entityTableName": "tender",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
