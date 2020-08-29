@@ -1,0 +1,84 @@
+entity MeasurementParameter {
+	title String
+}
+
+entity UnitKIPiA {
+	title String required minlength(3),
+    description String minlength(3),
+	systemRSUPAZ Boolean,
+	rootPlanPresence Boolean,
+    needProjectOrder Boolean,
+    needProjectCalculation Boolean,
+    needElectricalHeating Boolean,
+    numberAI Integer,
+    numberAO Integer,
+    numberDI Integer,
+    numberDO Integer,
+    basicLaborInput Double
+}
+
+entity InstallationKIPiA {
+	title String required minlength(3)
+}
+
+entity Tender {
+    number String,
+    title String required minlength(3),
+    description String minlength(3),
+    location String,
+    worktrip Boolean,
+    needSIDStage Boolean,
+    needOTRStage Boolean
+}
+
+entity ProjectMark {
+	title String required minlength(3),
+    mark String required minlength(2)
+}
+
+entity UnitKIPiAGroup {
+	quantity Integer
+}
+
+entity InstallationKIPiAGroup {
+	quantity Integer
+}
+
+entity KIPWiringDiagramType {
+	title String required minlength(3),
+    description String minlength(3),
+}
+
+entity Client {
+	title String required minlength(3),
+    contactName String minlength(3),
+    contactNumber String minlength(3),
+    description String minlength(3)
+}
+
+
+relationship OneToOne {
+	Client{user} to User{client}
+}
+
+relationship OneToMany {
+	 Client{tender} to Tender{client}
+}
+
+relationship ManyToOne {
+	UnitKIPiA{kipWiringDiagramType} to KIPWiringDiagramType
+    UnitKIPiA{meashurmentParameter} to MeasurementParameter
+}
+
+relationship ManyToMany {
+	Tender{projectMark} to ProjectMark{tender}
+	Tender{unitKIPiAGroup} to UnitKIPiAGroup{tender}
+    Tender{installationKIPiAGroup} to InstallationKIPiAGroup{tender}
+    InstallationKIPiAGroup{installationKIPiA} to InstallationKIPiA{InstallationKIPiAGroup}
+    UnitKIPiAGroup{unitKIPiA} to UnitKIPiA{unitKIPiAGroup}
+    
+}
+
+service all with serviceImpl
+
+paginate all with pagination
